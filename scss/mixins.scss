@@ -1,0 +1,7 @@
+@mixin gradient-background($start, $end) {
+  background: linear-gradient($start, $end);
+}
+
+@mixin cup-border-radius($radius) {
+  border-radius: $radius;
+}

@@ -1,0 +1,53 @@
+.cup {
+  width: 200px;
+  height: 300px;
+  background-color: pink;
+  position: relative;
+  overflow: hidden;
+}
+.cup .cup-inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-color: pink;
+  overflow: hidden;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+}
+.cup .cup-inner .water {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: linear-gradient(180deg, purple 50%, transparent 50%);
+  background-size: 100% 200%;
+  background-position: 0 100%;
+  transition: background-position 0.5s ease-in-out;
+}
+.cup .cup-inner .water:hover {
+  background-position: 0 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: rgb(34, 185, 209);
+}
+
+.message {
+  text-align: center;
+  font-size: 18px;
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.emoji {
+  font-size: 24px;
+  margin-top: 5px;
+}
+
+/*# sourceMappingURL=style.css.map */
